@@ -1,0 +1,90 @@
+/* Author: David Leon */
+/* Date: 1/22/2024 */
+/* drop down menu css source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown */
+body {
+    background-color: pink;
+    background-image: url(https://t4.ftcdn.net/jpg/01/46/06/25/360_F_146062503_SKhVeah2NFWSauxFm4qEvkgBJMMBOYCh.jpg);
+    background-size: 1500px 1500px;
+  }
+  
+  h3 {
+    color: red;
+    font-family: verdana;
+  }
+
+  h1 {
+    color: red;
+    font-family: verdana;
+    text-align: center
+  }
+
+  p {
+    color: red;
+    font-family: fantasy;
+    margin-left:500px
+  }
+
+  table {
+    margin-left:500px 
+}
+
+textarea {
+  margin-left:500px 
+}
+
+ul {
+  margin-left:500px 
+}
+
+button {
+  margin-left:500px
+}
+
+img {
+  margin-left:500px
+}
+
+  /* Dropdown Button */
+.dropbtn {
+  background-color: #d91a27;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  height: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  overflow: scroll;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #d11638;}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- Author: David Leon -->
+<!-- Date: 1/22/2024 -->
+<html>
+<head>
+<link rel="stylesheet" href="stylesheets/cheesecake.css">
+<title>Page Title</title>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"/>
+ </script>
+</head>
+<body>
+
+<script src="javascripts/cheesejava.js"></script>
+
+    <h1>Cheesecake Order Form</h1> <!-- Title -->
+    <img src= https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg/2560px-Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg alt="cheesecake" width="200" height="200"> <!-- The cheesecake image -->
+
+    <form id = "form_id" action="/action_page.php">
+       
+        <p>Quantity Topping</p>
+        <table style="width:10%"> <!-- start of table -->
+            <tr>
+                <th> <!-- this is left part of table is the topping quantity -->
+                    <select name="quantityTopping" id="quantityTopping">
+                        <option value="1">1</option>       
+                        <option value="2">2</option>        
+                        <option value="3">3</option>   
+                    </select>
+                </th>
+                <th>
+                    <!-- this is right part of table with the multiple choice bubble -->
+                    <td> <input type="radio" name="food" id ="plain" value = "Plain" /> : Plain<br /> 
+                        <input type="radio" name="food" id="cherry" value = "Cherry" /> : Cherry<br /> 
+                        <input type="radio" name="food" id="chocolate" value = "Chocolate" /> : Chocolate<br /> 
+                    </td>
+
+                </th>
+            </tr>
+        </table> <!-- end of table -->
+
+        <p>Notes:</p> <!-- note box below -->
+        <textarea id="cheesecakeBox" name="cheesecakeBox" rows="4" cols="50">Enter any special instructions here.</textarea>
+        <br>
+    </form>
+
+ 
+    <button id = "order_id"onclick="myFunction()">Order</button>   <!--once the button is clicked, there will be either an alert or customer order info-->
+
+    <!-- id info used to diplay customer order info -->
+    <p id="orderPlaced"></p>
+    <p id="topping"></p>
+    <p id ="getQuantity"></p>
+    <p id ="getTextArea"></p>
+
+    <script src="javascripts/cheesejava.js"></script>
+       
+    
+<!--below I split the header text by a table. i.e the first table column has "Orders for" and the second
+table column has the month widget component such has "jan"-->
+
+<table style="width:13%">  <!--this is a 1 x 2 table -->
+        <tr>
+            <th>
+                <h3>Orders for </h3> <!--this first column has the text "orders for"-->
+            </th>
+            <th> <!--this second column will have the month-->
+                <div class="dropdown" id =DropDown>
+                    <monthButton class="dropbtn">Jan</monthButton>
+                    <div class="dropdown-content">
+                        <!--which ever month is clicked in drop down menu will change it to that month-->
+                      <a href="#" onclick="myJanFunction()">Jan</a> 
+                      <a href="#" onclick="myFebFunction()">Feb</a>
+                      <a href="#" onclick="myMarFunction()">Mar</a>
+                      <a href="#" onclick="myAprFunction()">Apr</a>
+                      <a href="#" onclick="myMayFunction()">May</a>
+                      <a href="#" onclick="myJunFunction()">Jun</a>
+                      <a href="#" onclick="myJulFunction()">Jul</a>
+                      <a href="#" onclick="myAugFunction()">Aug</a>
+                      <a href="#" onclick="mySepFunction()">Sep</a>
+                      <a href="#" onclick="myOctFunction()">Oct</a>
+                      <a href="#" onclick="myNovFunction()">Nov</a>
+                      <a href="#" onclick="myDecFunction()">Dec</a>
+                    </div>
+                </div>
+            </th>
+        </tr>
+</table>
+
+<!-- below is the topping information which is below the header which has the drop down menu-->
+    <ul>
+        <li>11 cherry</li>
+        <li>17 chocolate</li>
+        <li>31 plain</li>
+    </ul>
+
+
+    
+</body>
+</html>
